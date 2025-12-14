@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Review CineCritic</title>
+</head>
+<body bgcolor="#ffffff">
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        
+        <tr bgcolor="#f8f8f8">
+            <td align="center" colspan="6" height="80">
+                <h1>CineCritic</h1>
+                <h3>Voice Your Opinion</h3>
+            </td>
+        </tr>
+
+        <tr bgcolor="#dddddd">
+            <td align="center" height="40" width="16%"><b><a href="index.html">HOME</a></b></td>
+            <td align="center" width="16%"><b><a href="reviews.html">REVIEWS</a></b></td>
+            <td align="center" width="16%"><b><a href="top_rated.html">TOP 10</a></b></td>
+            <td align="center" width="16%"><b><a href="trailers.html">TRAILERS</a></b></td>
+            <td align="center" width="16%"><b><a href="contact.html">CONTACT</a></b></td>
+            <td align="center" width="16%"><b><a href="submit_review.html">SUBMIT</a></b></td>
+        </tr>
+
+        <tr>
+            <td colspan="6" align="center">
+                <br>
+                <table width="80%" border="0">
+                    <tr>
+                        <td>
+                            <h2>Submit Your Own Review</h2>
+                            <p>Watched a movie recently? Tell us what you think.</p>
+                            <hr>
+
+                            <form action="#" method="post">
+                                <table border="0" cellpadding="10" bgcolor="#f9f9f9">
+                                    <tr>
+                                        <td><label for="name">Your Name:</label></td>
+                                        <td><input type="text" id="name" name="name" size="40" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="email">Email Address:</label></td>
+                                        <td><input type="email" id="email" name="email" size="40" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="movie">Movie Title:</label></td>
+                                        <td>
+                                            <select id="movie" name="movie">
+                                                <option value="none">-- Select Movie --</option>
+                                                <option value="kalki">Kalki 2898 AD</option>
+                                                <option value="salaar">Salaar</option>
+                                                <option value="pushpa">Pushpa</option>
+                                                <option value="rrr">RRR</option>
+                                                <option value="baahubali">Baahubali 2</option>
+                                                <option value="jersey">Jersey</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">Your Rating:</td>
+                                        <td>
+                                            <input type="radio" name="rating" value="5"> 5 Stars<br>
+                                            <input type="radio" name="rating" value="4"> 4 Stars<br>
+                                            <input type="radio" name="rating" value="3"> 3 Stars<br>
+                                            <input type="radio" name="rating" value="2"> 2 Stars<br>
+                                            <input type="radio" name="rating" value="1"> 1 Star
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top"><label for="review">Detailed Review:</label></td>
+                                        <td><textarea id="review" name="review" rows="6" cols="40"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input type="submit" value="Submit Review">
+                                            <input type="reset" value="Clear Form">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+            </td>
+        </tr>
+
+        <tr bgcolor="#333333">
+            <td colspan="6" align="center" height="50">
+                <font color="#ffffff">&copy; 2025 CineCritic.</font>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
