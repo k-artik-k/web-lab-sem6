@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Position of mouse pointer</title>
+</head>
+<body>
+<p>Move mouse inside this box</p>
+    <div
+        style="width:500px;height:500px;border:2px solid black;"
+        onmousemove="showPosition(event)">
+        
+    </div>
+
+    <p id="output"></p>
+
+    <script>
+        function showPosition(e) {
+            var x = e.clientX;
+            var y = e.clientY;
+
+            document.getElementById("output").innerHTML =
+                "Mouse X Position: " + x + "<br>" +
+                "Mouse Y Position: " + y;
+        }
+    </script>
+
+</body>
+</html>

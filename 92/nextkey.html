@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Next Key DOM 2</title>
+</head>
+<body>
+<p>Press any alphabet</p>
+<input type="text" id="box">
+
+<p id="output"></p>
+
+<script>
+    var box = document.getElementById("box");
+
+    box.addEventListener("keydown", function (e) {
+        output.innerHTML = "Key Pressed: " + e.key;
+    });
+
+    box.addEventListener("keyup", function (e) {
+        var ch = e.key;
+
+        if (ch >= 'A' && ch <= 'Z' || ch >= 'a' && ch <= 'z') {
+            var next = String.fromCharCode(ch.charCodeAt(0) + 1);
+            output.innerHTML += "<br>Next Key: " + next;
+        }
+    });
+</script>
+
+</body>
+</html>
